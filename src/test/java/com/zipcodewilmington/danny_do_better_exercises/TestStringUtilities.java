@@ -132,7 +132,18 @@ public class TestStringUtilities {
         Assert.assertEquals(expected.toString(), actual.toString());
     }
 
+    @Test
+    public void getTheWord(){
+        // : Given
+        String input = "Zipcode Wilmington";
+        String expected = "Zipcode";
 
+        // : When
+        String actual = StringUtilities.getWord(input, 1);
+
+        // : Then
+        assertEquals(expected, actual);
+    }
     @Test
     public void getTheFirstWord(){
         // : Given
